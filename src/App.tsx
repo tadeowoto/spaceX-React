@@ -1,10 +1,12 @@
-import Header from "./components/organism/Header.tsx";
-
+import MainLayout from "./components/templates/MainLayout"
+import Home from "./components/pages/Home"
 
 function App() {
   return (
     <>
-      <Header />
+      <MainLayout>
+        <Home />
+      </MainLayout>
     </>
   )
 }

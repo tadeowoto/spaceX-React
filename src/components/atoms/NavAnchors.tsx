@@ -6,7 +6,7 @@ type Props = {
 
 const NavAnchors = ({ text, route }: Props) => {
   return (
-    <a href={route}>{text}</a>
+    <a href={route} className=" hover:text-gray-700">{text}</a>
   )
 }
 
