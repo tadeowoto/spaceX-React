@@ -1,6 +1,5 @@
 import ImagesSection from "../molecules/ImagesSection";
 import BgImages from "../../data/BgImages";
-import MainBtn from "../atoms/MainBtn";
 import BackgroundImage from "../atoms/BackgroundImage";
 const HeroSection = () => {
   return (
@@ -13,9 +12,6 @@ const HeroSection = () => {
               <BackgroundImage url={section.url} alt={section.alt} />
             </div>
           }
-          MainBtn={<MainBtn text="Learn More" route="/" />}
-          MainText="SpaceX"
-          SecondaryText="SpaceX is a company that makes rockets and spaceships."
         />
       ))}
     </>
