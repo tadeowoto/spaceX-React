@@ -1,8 +1,8 @@
 const VideoBackground = () => {
     return (
-      <div className="fixed inset-0 w-full h-full overflow-hidden z-[-1]">
+      <div className="fixed inset-0 w-full h-screen overflow-hidden z-[-1] ">
         <video
-          className="absolute top-1/2 left-1/2 w-full h-full object-cover transform -translate-x-1/2 -translate-y-1/2"
+          className="absolute top-1/2 left-1/2 w-full h-screen object-cover transform -translate-x-1/2 -translate-y-1/2 "
           autoPlay
           muted
           loop

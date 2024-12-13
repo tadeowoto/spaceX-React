@@ -1,7 +1,7 @@
 import ImagesSection from "../molecules/ImagesSection";
 import BgImages from "../../data/BgImages";
 import MainBtn from "../atoms/MainBtn";
-
+import BackgroundImage from "../atoms/BackgroundImage";
 const HeroSection = () => {
   return (
     <>
@@ -9,8 +9,8 @@ const HeroSection = () => {
         <ImagesSection
           key={section.id}
           MainImage={
-            <div className="h-full">
-              <img src={section.url} alt={section.alt} />
+            <div className="h-full w-full">
+              <BackgroundImage url={section.url} alt={section.alt} />
             </div>
           }
           MainBtn={<MainBtn text="Learn More" route="/" />}
