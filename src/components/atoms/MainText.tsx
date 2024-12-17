@@ -5,7 +5,7 @@ type Props = {
 
 const MainText = ({ text }: Props) => {
   return (
-    <p className="text-lg text-gray-300">{text}</p>
+    <p className="text-3xl text-gray-100 font-secondaryFont tracking-wider">{text}</p>
   )
 }
 

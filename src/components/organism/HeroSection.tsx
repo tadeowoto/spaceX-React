@@ -7,6 +7,7 @@ const HeroSection = () => {
       {BgImages.map((section) => (
         <ImagesSection
           key={section.id}
+          videoState={section.watched}
           MainImage={
             <div className="h-full w-full">
               <BackgroundImage url={section.url} alt={section.alt} />

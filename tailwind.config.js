@@ -5,7 +5,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        mainFont: ['Orbitron', 'sans-serif'],
+        secondaryFont: ['Montserrat', 'sans-serif'],
+      }
+    },
   },
   plugins: [],
 }

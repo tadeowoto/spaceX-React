@@ -1,12 +1,23 @@
 
 type Props = {
-    text: string;
     route: string;
+    isVideo: boolean;
+    watched?: boolean;
 }
 
-function MainBtn({ text, route }: Props) {
+function MainBtn({  route, isVideo, watched }: Props) {
+  
+  let text = 'Explore';
+  if(isVideo){
+     text = watched ? 'See Recap' : 'Watch Now';
+  }
+  
   return (
-    <a href={route} className=" bg-white text-black px-4 py-2 rounded-md z-[1]">{text}</a>
+    <a href={route}>
+      <button className="text-white px-20 py-4 rounded-md bg-transparent border-2 border-white w-fit hover:bg-white hover:text-black transition-all duration-300 hover:cursor-pointer">
+        {text}
+      </button>
+    </a>
   )
 }
 
